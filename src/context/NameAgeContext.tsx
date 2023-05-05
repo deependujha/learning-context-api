@@ -17,6 +17,7 @@ type contextType = {
 	changeAge: (age: number) => void;
 	changeName: (name: string) => void;
 };
+
 const NameAgeContext = createContext({} as contextType);
 
 const NameAgeContextProvider = ({ children }: NameAgeContextProviderProps) => {
